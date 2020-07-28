@@ -1,0 +1,13 @@
+---
+ apiVersion: v1
+ kind: Service
+ metatdata:
+   name: 'tomcat-in-tomcat-service'
+   labels:
+     app: tomcat-service-2
+ spec: 
+   selector:
+     app: my-tomcat2
+   type: NodePort
+   ports:
+     - port: 80

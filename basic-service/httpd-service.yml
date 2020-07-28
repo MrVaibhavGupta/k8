@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: 'my-httpd-service'
+  labesl: 
+    app: 'my-httpd-1'
+spec:
+  selector:
+    app: my-httpd1
+  type: NodePort
+  ports:
+    - port: 80
+    
